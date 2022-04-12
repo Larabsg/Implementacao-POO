@@ -11,7 +11,7 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return primeiro_nome + " " + segundo_nome + " | " + salario;
+        return primeiro_nome + " " + segundo_nome + " |     " + salario;
     }
 
     public String getPrimeiro_nome() {

@@ -9,7 +9,7 @@ public class Main {
         double salario, comissao;
         String primeiro_nome2, segundo_nome2;
         double salario2;
-        int resp, cont=0, cont2=0;
+        int resp, cont=0, cont2=0, qtdVendas;
         Funcionario[] funcionarios = new Funcionario[10];
         FuncionarioComissionado[] funcionarios_Comissionados = new FuncionarioComissionado[10];
 
@@ -50,16 +50,20 @@ public class Main {
                     salario2 = sc.nextDouble();
                     System.out.println("Digite o valor da comissao (%):");
                     comissao = sc.nextDouble();
+                    System.out.println("Digite a quantidade de vendas feitas:");
+                    qtdVendas = sc.nextInt();
 
                     funcionarios_Comissionados[cont2] = new FuncionarioComissionado(primeiro_nome2, segundo_nome2, salario2, comissao);
                     cont2++;
                     break;
                 case 3:
+                    System.out.println("     Nome    |    Salario");
                     for(int i = 0; i < cont; i++) {
                         System.out.println(funcionarios[i]);
                     }
                     break;
                 case 4:
+                    System.out.println("     Nome    |    Salario + comissao");
                     for(int i = 0; i < cont2; i++) {
                         System.out.println(funcionarios_Comissionados[i]);
                     }
@@ -68,17 +72,6 @@ public class Main {
                     break;
             }
         } while(resp != 5);
-
-        System.out.println("Digite o primeiro nome do funcionario:");
-        primeiro_nome = sc.nextLine();
-
-        System.out.println("Digite o segundo nome do funcionário:");
-        segundo_nome = sc.nextLine();
         
-        Funcionario func1 = new Funcionario(primeiro_nome, segundo_nome, 400.00);
-        FuncionarioComissionado func_c1 = new FuncionarioComissionado("Edsom", "Fontes", 1200.00, 0.25);
-
-        System.out.println("Funcionario: " + func1.getPrimeiro_nome() + " " + func1.getSegundo_nome());
-        System.out.println("Salario: " + func1.getSalario());
     }
 }

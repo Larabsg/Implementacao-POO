@@ -10,7 +10,7 @@ public class FuncionarioComissionado extends Funcionario{
 
     @Override
     public String toString() {
-        return super.getPrimeiro_nome() + " " + super.getSegundo_nome() + " | " + super.getSalario();
+        return super.getPrimeiro_nome() + " " + super.getSegundo_nome() + " |        " + salarioComissionado(qtdVendas);
     }
 
     public double getComissao() {
@@ -30,11 +30,15 @@ public class FuncionarioComissionado extends Funcionario{
     }
 
     public double calculaComissao(int qtdVendas) {
-        return comissao*qtdVendas;
+        return comissao * qtdVendas;
+    }
+
+    public double getcalculaComissaoSemVendas() {
+        return super.getSalario() + (getSalario() * this.comissao);
     }
 
     public double salarioComissionado(int qtdVendas) {
-        return super.getSalario()*calculaComissao(qtdVendas);
+        return super.getSalario() + calculaComissao(qtdVendas);
     }
     
 }
