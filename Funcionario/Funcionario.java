@@ -1,5 +1,3 @@
-package Implementacoes_POO.Funcionario;
-
 public class Funcionario {
     private String primeiro_nome;
     private String segundo_nome;
@@ -9,6 +7,11 @@ public class Funcionario {
         this.primeiro_nome = primeiro_nome;
         this.segundo_nome = segundo_nome;
         this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return primeiro_nome + " " + segundo_nome + " | " + salario;
     }
 
     public String getPrimeiro_nome() {

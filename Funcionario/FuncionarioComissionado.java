@@ -1,5 +1,3 @@
-package Implementacoes_POO.Funcionario;
-
 public class FuncionarioComissionado extends Funcionario{
 
     private double comissao;
@@ -8,6 +6,11 @@ public class FuncionarioComissionado extends Funcionario{
     public FuncionarioComissionado(String primeiro_nome, String segundo_nome, double salario, double comissao) {
         super(primeiro_nome, segundo_nome, salario);
         this.comissao = comissao;
+    }
+
+    @Override
+    public String toString() {
+        return super.getPrimeiro_nome() + " " + super.getSegundo_nome() + " | " + super.getSalario();
     }
 
     public double getComissao() {
