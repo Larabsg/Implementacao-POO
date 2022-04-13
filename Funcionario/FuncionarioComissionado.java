@@ -29,10 +29,12 @@ public class FuncionarioComissionado extends Funcionario{
         this.qtdVendas = qtdVendas;
     }
 
+    //esse seu método pode ser deixado private. Ao que me parece vai ser utilizado somente no escopo da classe. Outros objetos provavelmente só farão uso do método salarioComissionado()
     public double calculaComissao(int qtdVendas) {
         return comissao * qtdVendas;
     }
 
+    //Não entendi o objetivo desse método. Seria para calcular o salário quando não há vendas? Se for, não bastaria chamar getSalario()?
     public double getcalculaComissaoSemVendas() {
         return super.getSalario() + (getSalario() * this.comissao);
     }
