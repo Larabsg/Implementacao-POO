@@ -11,8 +11,6 @@ public class Main {
         Funcionario[] funcionarios = new Funcionario[10];
         FuncionarioComissionado[] funcionarios_Comissionados = new FuncionarioComissionado[10];
 
-        //resp = sc.nextInt();
-
         do {
             System.out.println("____________________________________________");
             System.out.println("1. Cadastrar funcionario comum");
