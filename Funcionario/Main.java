@@ -5,10 +5,8 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        String primeiro_nome, segundo_nome;
-        double salario, comissao;
-        String primeiro_nome2, segundo_nome2;
-        double salario2;
+        String primeiro_nome, segundo_nome, primeiro_nome2, segundo_nome2;
+        double salario, comissao, salario2;
         int resp, cont=0, cont2=0, qtdVendas;
         Funcionario[] funcionarios = new Funcionario[10];
         FuncionarioComissionado[] funcionarios_Comissionados = new FuncionarioComissionado[10];
@@ -73,5 +71,6 @@ public class Main {
             }
         } while(resp != 5);
         
+        sc.close();
     }
 }
