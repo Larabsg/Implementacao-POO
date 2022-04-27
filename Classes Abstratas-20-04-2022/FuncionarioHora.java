@@ -27,13 +27,13 @@ public class FuncionarioHora extends FuncionarioAssalariado{
 
     @Override
     public Double ganhos() {
-        return null;
+        return horas*valorDaHora+super.getSalarioSemanal();
     }
 
     @Override
     public String toString() {
         
-        return "Funcionario Comissionado\nNome: " + super.getNome() + "\nMatricula: " + super.getMatricula();
+        return super.getNome() + " | " + super.getMatricula() + " | " + ganhos();
     }
     
 }

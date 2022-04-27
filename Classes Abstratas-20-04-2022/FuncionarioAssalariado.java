@@ -9,7 +9,7 @@ public class FuncionarioAssalariado extends Funcionario {
 
     @Override
     public Double ganhos() {
-        return null;
+        return salarioSemanal*4;
     }
     
     public double getSalarioSemanal() {
@@ -22,7 +22,6 @@ public class FuncionarioAssalariado extends Funcionario {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.getNome() + " | " + super.getMatricula() + " | " + salarioSemanal;
+        return super.getNome() + " | " + super.getMatricula() + " | " + ganhos();
     }
 }

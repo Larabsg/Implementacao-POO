@@ -12,7 +12,7 @@ public class FuncionarioComissionado extends Funcionario {
 
     @Override
     public Double ganhos() {
-        return null;
+        return quantidadeVendas*valorPorVenda;
     }
 
     public int getQuantidadeVendas() {
@@ -34,7 +34,7 @@ public class FuncionarioComissionado extends Funcionario {
     @Override
     public String toString() {
 
-        return "Funcionario Comissionado\nNome: " + super.getNome() + "\nMatricula: " + super.getMatricula();
+        return super.getNome() + " | " + super.getMatricula() + " | " + ganhos();
     }
     
     
