@@ -9,5 +9,9 @@ public class CadastrarProdutos {
         products[index] = p;
         index++;
     }
+
+    public Product[] getProducts() {
+        return products;
+    }
     
 }

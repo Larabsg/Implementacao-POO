@@ -11,7 +11,7 @@ public class UsedProduct extends Product{
 
     @Override
     public String priceTag() {
-        return super.getName() + " $ " + super.getPrice() + " (Manufacture date: $ " + manufactureDate + ")";
+        return super.getName() + " (used) $ " + super.getPrice() + " (Manufacture date: " + manufactureDate + ")";
     }
 
     public String getManufactureDate() {
